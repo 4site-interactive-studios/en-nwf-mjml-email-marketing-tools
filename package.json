@@ -1,0 +1,16 @@
+{
+  "name": "nwf-marketing-tools",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "mjml ./src/*.mjml -o ./dist/",
+    "watch": "mjml -w ./src/*.mjml -o ./dist/"
+  },
+  "keywords": [],
+  "author": "4Site Interactive Studios",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "mjml": "^4.15.3"
+  }
+}

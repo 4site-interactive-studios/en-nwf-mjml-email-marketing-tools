@@ -1,0 +1,418 @@
+<mjml>
+    <mj-head>
+        <mj-breakpoint width="600px"/>
+        <mj-font name="Fira Sans" href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" />
+        <mj-attributes>
+            <mj-all color="inherit" font-family="Fira Sans, Arial, sans-serif" />
+            <mj-text font-size="16px" line-height="1.25" />
+            <mj-button font-size="18px" border-radius="0" />
+            <mj-navbar-link text-transform="none" />
+        </mj-attributes>
+        <mj-style>
+            div[data-container="main"] {
+                /* Email builder compatability styles */
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            body {
+                color: #132a44;
+                font-family: Fira Sans, Helvetica, Arial, sans-serif;
+            }
+
+            a {
+                color: #4A8D65;
+            }
+
+            h1,h2,h3,h4,h5,h6 {
+                color: #4A8D65;
+            }
+
+            .wysiwyg > div > *:first-child {
+                margin-top: 0;
+            }
+
+            .wysiwyg > div > *:last-child {
+                margin-bottom: 0;
+            }
+
+            @media (max-width: 599px) {
+                .responsive-col-padding > table > tbody > tr > td {
+                    padding: 0 25px 20px!important;
+                }
+
+                .desktop-only {
+                    display: none!important;
+                }
+
+                .signature-img {
+                    width: 30%!important;
+                }
+
+                .signature-text {
+                    width: 70%!important;
+                }
+            }
+            /*
+              Colors:
+                light green: #c3c37e
+                dark green: #4A8D65
+                light blue: #d8eff6
+                black: #272b2d
+                blue/black: #132a44
+                light black: #252525
+                white: #ffffff
+                Choose clean water blue: #0093d0
+                orange: #cc4b24
+                cyan: #a3d3d6
+                green/blue: #e0e9ea
+            */
+        </mj-style>
+    </mj-head>
+    <mj-body background-color="#f4f4f4">
+        <!-- START: Main Content -->
+        <!-- START: Header -->
+        <mj-section background-color="#4A8D65">
+            <mj-group>
+                <mj-column vertical-align="middle">
+                    <mj-image
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/2023NWF_Logo_Black-optimized.png"
+                        width="200px"
+                        align="left"
+                        href="https://www.nwf.org"
+                        padding="0px 25px"
+                    />
+                </mj-column>
+                <mj-column vertical-align="middle">
+                    <mj-button color="#132a44" background-color="#d8eff6"  href="https://support.nwf.org/page/64371/donate/1" align="right">
+                        Donate
+                    </mj-button>
+                </mj-column>
+            </mj-group>
+        </mj-section>
+        <!-- END: Header -->
+
+        <!-- START: WYSIWYG (Text content) -->
+        <mj-section background-color="#ffffff">
+            <mj-column>
+                <mj-text padding="0 25px" css-class="wysiwyg">
+                    <h1>Hi there!</h1>
+                    <p>Thanks for signing up for our newsletter. We're excited to have you on board.</p>
+                    <a href="test.com">Link</a>
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <!-- END: WYSIWYG (Text content) -->
+
+        <!-- START: Image -->
+        <mj-section background-color="#ffffff" padding="0">
+            <mj-column>
+                <mj-image
+                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/20201212_EmailHeader_Wolverine.jpg?v=1607357149000"
+                    alt="Custom alt text"
+                    href="https://www.nwf.org"
+                    padding="0"
+                />
+            </mj-column>
+        </mj-section>
+        <!-- END: Image -->
+
+        <!-- START: Image - Fixed Size -->
+        <mj-section background-color="#ffffff" padding="0">
+            <mj-column>
+                <mj-image
+                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/20201212_EmailHeader_Wolverine.jpg?v=1607357149000"
+                    alt="Custom alt text"
+                    href="https://www.nwf.org"
+                    width="150px"
+                    height="100px"
+                    padding="0"
+                />
+            </mj-column>
+        </mj-section>
+        <!-- END: Image - Fixed Size -->
+
+        <!-- START: CTA Button -->
+        <mj-section background-color="#ffffff" padding="0">
+            <mj-column>
+                <mj-button inner-padding="15px 25px" color="#132a44" background-color="#d8eff6"  href="https://support.nwf.org/page/64371/donate/1" align="left">
+                    Donate
+                </mj-button>
+            </mj-column>
+        </mj-section>
+        <!-- END: CTA Button -->
+
+        <!-- START: Signature card -->
+        <mj-section background-color="#ffffff">
+            <mj-group>
+                <mj-column vertical-align="middle" width="20%" css-class="signature-img">
+                    <mj-image
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Matthew_Kehres_New_NWF_Individual_people.png"
+                        alt="Custom alt text"
+                        padding-top="0"
+                        padding-bottom="0"
+                        padding-right="0"
+                    />
+                </mj-column>
+                <mj-column vertical-align="middle" width="80%" css-class="signature-text">
+                    <mj-text font-size="16px" padding-left="25px" padding-top="0" padding-bottom="0" css-class="wysiwyg">
+                        <p>Sincerely,</p>
+                        <p>Matthew Kehres<br>
+                            Associate Vice President for Digital Engagement<br>
+                            National Wildlife Federation
+                        </p>
+                    </mj-text>
+                </mj-column>
+            </mj-group>
+        </mj-section>
+        <!-- END: Signature card -->
+
+        <!-- START: Card -->
+        <mj-section background-color="#ffffff" padding="10px 25px">
+            <mj-column padding="0px 0px 16px" background-color="#e0e9ea">
+                <mj-image
+                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Article4_Newsletter_500x224.jpg"
+                    alt="Custom alt text"
+                    padding="0"
+                />
+                <mj-text container-background-color="#e0e9ea" padding="16px 25px 0px" css-class="wysiwyg">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                    <p>Thinking about the perfect costume to wear? Some wildlife appear as if they're already ready to trick-or-treat. Take a look at some critters who are in the Halloween spirit all year long.</p>
+                </mj-text>
+                <mj-text container-background-color="#e0e9ea" font-size="18px" padding="16px 25px 0px" css-class="wysiwyg">
+                    <p><a href="#" target="_blank" style="text-decoration: none">Button Link Text (H3)</a></p>
+                </mj-text>
+                <mj-text container-background-color="#e0e9ea" padding="16px 25px 0px" css-class="wysiwyg">
+                    <p>Want more climate news?</p>
+                    <ul>
+                        <li><a href="#" target="_blank">Weighing Carbon: Understanding Carbon Emissions</a></li>
+                        <li><a href="#" target="_blank">Power Lines and Clean Energy: Our opportunity to learn from the past</a></li>
+                    </ul>
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <!-- END: Card -->
+
+        <!-- START: Cards side by side -->
+        <mj-section background-color="#ffffff" padding="10px 0px" >
+            <mj-column padding="0px 12px 0px 25px" css-class="responsive-col-padding">
+                <mj-image
+                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Article4_Newsletter_500x224.jpg"
+                    alt="Custom alt text"
+                    padding="0"
+                    fluid-on-mobile="true"
+                />
+                <mj-text container-background-color="#e0e9ea" padding="16px 25px 0px" css-class="wysiwyg">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                    <p>Thinking about the perfect costume to wear? Some wildlife appear as if they're already ready to trick-or-treat. Take a look at some critters who are in the Halloween spirit all year long.</p>
+                </mj-text>
+                <mj-text container-background-color="#e0e9ea" font-size="18px" padding="16px 25px 0px" css-class="wysiwyg">
+                    <p><a href="#" target="_blank" style="text-decoration: none">Button Link Text (H3)</a></p>
+                </mj-text>
+                <mj-text container-background-color="#e0e9ea" padding="16px 25px 0px" css-class="wysiwyg">
+                    <p>Want more climate news?</p>
+                    <ul>
+                        <li><a href="#" target="_blank">Weighing Carbon: Understanding Carbon Emissions</a></li>
+                        <li><a href="#" target="_blank">Power Lines and Clean Energy: Our opportunity to learn from the past</a></li>
+                    </ul>
+                </mj-text>
+                <mj-spacer height="16px" container-background-color="#e0e9ea" />
+            </mj-column>
+            <mj-column padding="0px 25px 0px 12px" css-class="responsive-col-padding">
+                <mj-image
+                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Article4_Newsletter_500x224.jpg"
+                    alt="Custom alt text"
+                    padding="0"
+                    fluid-on-mobile="true"
+                />
+                <mj-text container-background-color="#e0e9ea" padding="16px 25px 0px" css-class="wysiwyg">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                    <p>Thinking about the perfect costume to wear? Some wildlife appear as if they're already ready to trick-or-treat. Take a look at some critters who are in the Halloween spirit all year long.</p>
+                </mj-text>
+                <mj-text container-background-color="#e0e9ea" font-size="18px" padding="16px 25px 0px" css-class="wysiwyg">
+                    <p><a href="#" target="_blank" style="text-decoration: none">Button Link Text (H3)</a></p>
+                </mj-text>
+                <mj-text container-background-color="#e0e9ea" padding="16px 25px 0px" css-class="wysiwyg">
+                    <p>Want more climate news?</p>
+                    <ul>
+                        <li><a href="#" target="_blank">Weighing Carbon: Understanding Carbon Emissions</a></li>
+                        <li><a href="#" target="_blank">Power Lines and Clean Energy: Our opportunity to learn from the past</a></li>
+                    </ul>
+                </mj-text>
+                <mj-spacer height="16px" container-background-color="#e0e9ea" />
+            </mj-column>
+        </mj-section>
+        <!-- END: Cards side by side -->
+
+        <!-- START: Spacer -->
+        <mj-section padding="0">
+            <mj-column>
+                <mj-spacer height="20px" container-background-color="#ffffff" />
+            </mj-column>
+        </mj-section>
+        <!-- END: Spacer -->
+
+        <!-- START: RAW HTML -->
+        <mj-section background-color="#ffffff">
+            <mj-column>
+                <mj-text padding="0"><h1>raw html</h1></mj-text>
+            </mj-column>
+        </mj-section>
+        <!-- END: RAW HTML -->
+
+        <!-- START: Pre-footer -->
+        <mj-section background-color="#4A8D65">
+            <mj-column>
+                <mj-button color="#132a44" background-color="#d8eff6"  href="https://support.nwf.org/page/64371/donate/1">
+                    Donate
+                </mj-button>
+                <mj-text align="center" color="#ffffff" font-size="20px">
+                    Join the Conversation
+                </mj-text>
+                <mj-social font-size="15px" icon-size="40px" icon-padding="0 10px" mode="horizontal">
+                    <mj-social-element
+                        name="facebook-noshare"
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Facebook_Icon_40x40_white.png"
+                        href="https://www.facebook.com/NationalWildlife"
+                        background-color="#4A8D65"
+                    />
+                    <mj-social-element
+                        name="twitter-noshare"
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Twitter_Icon_40x40_white.png"
+                        href="https://twitter.com/NWF"
+                        background-color="#4A8D65"
+                    />
+                    <mj-social-element
+                        name="instagram"
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Instagram_Icon_40x40_white.png"
+                        href="https://www.instagram.com/nationalwildlife"
+                        background-color="#4A8D65"
+                    />
+                </mj-social>
+            </mj-column>
+        </mj-section>
+        <!-- END: Pre-footer -->
+
+        <!-- START: Footer menu bar -->
+        <mj-section background-color="#252525" padding="0">
+            <mj-column>
+                <mj-navbar>
+                    <mj-navbar-link href="https://support.nwf.org/page/9547/subscribe/1?ea.tracking.id=EML_FTR~b1e42b72" color="#ffffff">
+                        Sign up
+                    </mj-navbar-link>
+                    <mj-navbar-link href="https://www.nwf.org/About-Us/Contact-Us" color="#ffffff">
+                        Contact Us
+                    </mj-navbar-link>
+                    <mj-navbar-link href="https://www.nwf.org/Privacy-Policy" color="#ffffff">
+                        Privacy Policy
+                    </mj-navbar-link>
+                    <mj-navbar-link href="https://www.nwf.org" color="#ffffff">
+                        NWF.org
+                    </mj-navbar-link>
+                </mj-navbar>
+            </mj-column>
+        </mj-section>
+        <!-- END: Footer menu bar -->
+
+        <!-- START: Footer -->
+        <mj-section background-color="#ffffff">
+            <mj-column>
+                <mj-image
+                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/New_NWF_Logo.png?v=1710256205000"
+                    width="260px"
+                    href="https://www.nwf.org"
+                />
+                <mj-text align="center" font-size="11px" line-height="18px" padding="10px 25px 0">
+                    <p>
+                        © 2024 The National Wildlife Federation, all rights reserved
+                        <br>
+                        The National Wildlife Federation is a 501(c)(3) non-profit organization
+                        <br>
+                        PO Box 1583, Merrifield, VA 22116-1583
+                    </p>
+                    <p style="font-size: 13px">
+                        <a href="{view_in_browser_url}" target="_blank">View in Browser</a> | <a href="{unsubscribe_action~1121~27087~https://support.nwf.org/page/9111/subscriptions/1}" target="_blank">Unsubscribe</a>
+                    </p>
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <!-- END: Footer -->
+
+        <!-- START: Pre-footer (Choose clean water) -->
+        <mj-section background-color="#0093d0">
+            <mj-column>
+                <mj-text align="center" color="#ffffff" font-size="20px">
+                    Join the Conversation
+                </mj-text>
+                <mj-social font-size="15px" icon-size="40px" icon-padding="0 10px" mode="horizontal">
+                    <mj-social-element
+                        name="facebook-noshare"
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Facebook_Icon_40x40_white.png"
+                        href="https://www.facebook.com/choosecleanwater"
+                        background-color="#0093d0"
+                    />
+                    <mj-social-element
+                        name="twitter-noshare"
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Twitter_Icon_40x40_white.png"
+                        href="https://twitter.com/ChooseCleanH2O"
+                        background-color="#0093d0"
+                    />
+                    <mj-social-element
+                        name="instagram"
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Instagram_Icon_40x40_white.png"
+                        href="https://www.instagram.com/choosecleanwater"
+                        background-color="#0093d0"
+                    />
+                </mj-social>
+            </mj-column>
+        </mj-section>
+        <!-- END: Pre-footer (Choose clean water) -->
+
+        <!-- START: Footer menu bar (Choose clean water) -->
+        <mj-section background-color="#252525" padding="0">
+            <mj-column>
+                <mj-navbar>
+                    <mj-navbar-link href="https://www.choosecleanwater.org/take-action" color="#ffffff">
+                        Sign up
+                    </mj-navbar-link>
+                    <mj-navbar-link href="https://www.choosecleanwater.org/joinus" color="#ffffff">
+                        Contact Us
+                    </mj-navbar-link>
+                    <mj-navbar-link href="https://www.nwf.org/Privacy-Policy" color="#ffffff">
+                        Privacy Policy
+                    </mj-navbar-link>
+                    <mj-navbar-link href="https://www.nwf.org" color="#ffffff">
+                        NWF.org
+                    </mj-navbar-link>
+                </mj-navbar>
+            </mj-column>
+        </mj-section>
+        <!-- END: Footer menu bar (Choose clean water) -->
+
+        <!-- START: Footer (Choose clean water) -->
+        <mj-section background-color="#ffffff">
+            <mj-column>
+                <mj-image
+                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/New_NWF_Logo.png?v=1710256205000"
+                    width="260px"
+                    href="https://www.nwf.org"
+                />
+                <mj-text align="center" font-size="11px" line-height="18px" padding="10px 25px 0">
+                    <p>
+                        © 2024 The National Wildlife Federation, all rights reserved
+                        <br>
+                        The National Wildlife Federation is a 501(c)(3) non-profit organization
+                        <br>
+                        PO Box 1583, Merrifield, VA 22116-1583
+                    </p>
+                    <p style="font-size: 13px">
+                        <a href="{view_in_browser_url}" target="_blank" style="color: #0093d0;">View in Browser</a> | <a href="{unsubscribe_url~1427~103431~https://support.nwf.org~pb}" target="_blank" style="color: #0093d0;">Unsubscribe</a>
+                    </p>
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <!-- END: Footer (Choose clean water) -->
+
+        <!-- END: Main Content -->
+    </mj-body>
+</mjml>
