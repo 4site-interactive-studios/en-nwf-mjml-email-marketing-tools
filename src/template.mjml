@@ -8,6 +8,10 @@
             <mj-button font-size="18px" border-radius="0" />
             <mj-navbar-link text-transform="none" />
         </mj-attributes>
+        <mj-raw>
+            <meta name="color-scheme" content="light dark">
+            <meta name="supported-color-schemes" content="light dark">
+        </mj-raw>
         <mj-style>
             div[data-container="main"] {
                 /* Email builder compatability styles */
@@ -68,15 +72,88 @@
                 green/blue: #e0e9ea
             */
         </mj-style>
+        <mj-style>
+            :root {
+                color-scheme: light dark;
+                supported-color-schemes: light dark;
+            }
+
+            .dark-only {
+                display: none;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .light-only {
+                  display: none !important;
+                }
+
+                .dark-only {
+                  display: block !important;
+                }
+
+                body,
+                .email-body {
+                    color: #eeeeee !important;
+                    background-color: #171819 !important;
+                }
+
+                a {
+                    color: #798283 !important;
+                }
+
+                h1,h2,h3,h4,h5,h6 {
+                    color:  #798283 !important;
+                }
+
+                .block,
+                .block > table,
+                .spacer-block td {
+                    background-color: #0e0f0f !important;
+                }
+
+                .header-block.block,
+                .header-block.block > table {
+                    background-color: #121314 !important;
+                }
+
+                .pre-footer-block.block,
+                .pre-footer-block.block > table {
+                    background-color: #1f2021 !important;
+                }
+
+                .footer-menu-block.block,
+                .footer-menu-block.block > table {
+                    background-color: #121314 !important;
+                }
+
+                .button td,
+                .button a {
+                    background-color: #eaebec !important;
+                    color: #121314 !important;
+                }
+
+                .card-block .card-inner td {
+                    background-color: #1f2021 !important;
+                }
+
+                .side-by-side-card-block .card-inner > table table > tbody > tr > td {
+                    background-color: #1f2021 !important;
+                }
+
+                .social-link table {
+                    background-color: #1f2021 !important;
+                }
+            }
+        </mj-style>
     </mj-head>
-    <mj-body background-color="#f4f4f4">
+    <mj-body css-class="email-body" background-color="#f4f4f4">
         <!-- START: Main Content -->
         <!-- START: Header -->
-        <mj-section background-color="#4A8D65">
+        <mj-section css-class="header-block block" background-color="#4A8D65">
             <mj-group>
                 <mj-column vertical-align="middle">
                     <mj-image
-                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/2023NWF_Logo_Black-optimized.png"
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/New_NWF_Logo.png?v=1710256205000"
                         width="200px"
                         align="left"
                         href="https://www.nwf.org"
@@ -84,7 +161,7 @@
                     />
                 </mj-column>
                 <mj-column vertical-align="middle">
-                    <mj-button color="#132a44" background-color="#d8eff6"  href="https://support.nwf.org/page/64371/donate/1" align="right">
+                    <mj-button css-class="button" color="#132a44" background-color="#d8eff6"  href="https://support.nwf.org/page/64371/donate/1" align="right">
                         Donate
                     </mj-button>
                 </mj-column>
@@ -93,7 +170,7 @@
         <!-- END: Header -->
 
         <!-- START: WYSIWYG (Text content) -->
-        <mj-section background-color="#ffffff">
+        <mj-section css-class="text-block block" background-color="#ffffff">
             <mj-column>
                 <mj-text padding="0 25px" css-class="wysiwyg">
                     <h1>Hi there!</h1>
@@ -105,7 +182,7 @@
         <!-- END: WYSIWYG (Text content) -->
 
         <!-- START: Image -->
-        <mj-section background-color="#ffffff" padding="0">
+        <mj-section css-class="image-block block" background-color="#ffffff" padding="0">
             <mj-column>
                 <mj-image
                     src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/20201212_EmailHeader_Wolverine.jpg?v=1607357149000"
@@ -118,7 +195,7 @@
         <!-- END: Image -->
 
         <!-- START: Image - Fixed Size -->
-        <mj-section background-color="#ffffff" padding="0">
+        <mj-section css-class="fixed-image-block block" background-color="#ffffff" padding="0">
             <mj-column>
                 <mj-image
                     src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/20201212_EmailHeader_Wolverine.jpg?v=1607357149000"
@@ -133,9 +210,9 @@
         <!-- END: Image - Fixed Size -->
 
         <!-- START: CTA Button -->
-        <mj-section background-color="#ffffff" padding="0">
+        <mj-section css-class="cta-button-block block" background-color="#ffffff" padding="0">
             <mj-column>
-                <mj-button inner-padding="15px 25px" color="#132a44" background-color="#d8eff6"  href="https://support.nwf.org/page/64371/donate/1" align="left">
+                <mj-button css-class="button" inner-padding="15px 25px" color="#132a44" background-color="#d8eff6"  href="https://support.nwf.org/page/64371/donate/1" align="left">
                     Donate
                 </mj-button>
             </mj-column>
@@ -143,7 +220,7 @@
         <!-- END: CTA Button -->
 
         <!-- START: Signature card -->
-        <mj-section background-color="#ffffff">
+        <mj-section css-class="signature-block block" background-color="#ffffff">
             <mj-group>
                 <mj-column vertical-align="middle" width="20%" css-class="signature-img">
                     <mj-image
@@ -168,8 +245,8 @@
         <!-- END: Signature card -->
 
         <!-- START: Card -->
-        <mj-section background-color="#ffffff" padding="10px 25px">
-            <mj-column padding="0px 0px 16px" background-color="#e0e9ea">
+        <mj-section css-class="card-block block" background-color="#ffffff" padding="10px 25px">
+            <mj-column css-class="card-inner" padding="0px 0px 16px" background-color="#e0e9ea">
                 <mj-image
                     src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Article4_Newsletter_500x224.jpg"
                     alt="Custom alt text"
@@ -194,8 +271,8 @@
         <!-- END: Card -->
 
         <!-- START: Cards side by side -->
-        <mj-section background-color="#ffffff" padding="10px 0px" >
-            <mj-column padding="0px 12px 0px 25px" css-class="responsive-col-padding">
+        <mj-section css-class="side-by-side-card-block block" background-color="#ffffff" padding="10px 0px" >
+            <mj-column padding="0px 12px 0px 25px" css-class="responsive-col-padding card-inner">
                 <mj-image
                     src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Article4_Newsletter_500x224.jpg"
                     alt="Custom alt text"
@@ -218,7 +295,7 @@
                 </mj-text>
                 <mj-spacer height="16px" container-background-color="#e0e9ea" />
             </mj-column>
-            <mj-column padding="0px 25px 0px 12px" css-class="responsive-col-padding">
+            <mj-column padding="0px 25px 0px 12px" css-class="responsive-col-padding card-inner">
                 <mj-image
                     src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Article4_Newsletter_500x224.jpg"
                     alt="Custom alt text"
@@ -245,7 +322,7 @@
         <!-- END: Cards side by side -->
 
         <!-- START: Spacer -->
-        <mj-section padding="0">
+        <mj-section css-class="spacer-block block" padding="0">
             <mj-column>
                 <mj-spacer height="20px" container-background-color="#ffffff" />
             </mj-column>
@@ -253,7 +330,7 @@
         <!-- END: Spacer -->
 
         <!-- START: RAW HTML -->
-        <mj-section background-color="#ffffff">
+        <mj-section css-class="raw-html-block block" background-color="#ffffff">
             <mj-column>
                 <mj-text padding="0"><h1>raw html</h1></mj-text>
             </mj-column>
@@ -261,9 +338,9 @@
         <!-- END: RAW HTML -->
 
         <!-- START: Pre-footer -->
-        <mj-section background-color="#4A8D65">
+        <mj-section css-class="pre-footer-block block" background-color="#4A8D65">
             <mj-column>
-                <mj-button color="#132a44" background-color="#d8eff6"  href="https://support.nwf.org/page/64371/donate/1">
+                <mj-button css-class="button" color="#132a44" background-color="#d8eff6"  href="https://support.nwf.org/page/64371/donate/1">
                     Donate
                 </mj-button>
                 <mj-text align="center" color="#ffffff" font-size="20px">
@@ -271,18 +348,21 @@
                 </mj-text>
                 <mj-social font-size="15px" icon-size="40px" icon-padding="0 10px" mode="horizontal">
                     <mj-social-element
+                            css-class="social-link"
                         name="facebook-noshare"
                         src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Facebook_Icon_40x40_white.png"
                         href="https://www.facebook.com/NationalWildlife"
                         background-color="#4A8D65"
                     />
                     <mj-social-element
+                            css-class="social-link"
                         name="twitter-noshare"
                         src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Twitter_Icon_40x40_white.png"
                         href="https://twitter.com/NWF"
                         background-color="#4A8D65"
                     />
                     <mj-social-element
+                            css-class="social-link"
                         name="instagram"
                         src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Instagram_Icon_40x40_white.png"
                         href="https://www.instagram.com/nationalwildlife"
@@ -294,7 +374,7 @@
         <!-- END: Pre-footer -->
 
         <!-- START: Footer menu bar -->
-        <mj-section background-color="#252525" padding="0">
+        <mj-section css-class="footer-menu-block block" background-color="#252525" padding="0">
             <mj-column>
                 <mj-navbar>
                     <mj-navbar-link href="https://support.nwf.org/page/9547/subscribe/1?ea.tracking.id=EML_FTR~b1e42b72" color="#ffffff">
@@ -315,7 +395,7 @@
         <!-- END: Footer menu bar -->
 
         <!-- START: Footer -->
-        <mj-section background-color="#ffffff">
+        <mj-section css-class="footer-block block" background-color="#ffffff">
             <mj-column>
                 <mj-image
                     src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/New_NWF_Logo.png?v=1710256205000"
@@ -339,25 +419,28 @@
         <!-- END: Footer -->
 
         <!-- START: Pre-footer (Choose clean water) -->
-        <mj-section background-color="#0093d0">
+        <mj-section css-class="pre-footer-block block" background-color="#0093d0">
             <mj-column>
                 <mj-text align="center" color="#ffffff" font-size="20px">
                     Join the Conversation
                 </mj-text>
                 <mj-social font-size="15px" icon-size="40px" icon-padding="0 10px" mode="horizontal">
                     <mj-social-element
+                        css-class="social-link"
                         name="facebook-noshare"
                         src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Facebook_Icon_40x40_white.png"
                         href="https://www.facebook.com/choosecleanwater"
                         background-color="#0093d0"
                     />
                     <mj-social-element
+                            css-class="social-link"
                         name="twitter-noshare"
                         src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Twitter_Icon_40x40_white.png"
                         href="https://twitter.com/ChooseCleanH2O"
                         background-color="#0093d0"
                     />
                     <mj-social-element
+                            css-class="social-link"
                         name="instagram"
                         src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Instagram_Icon_40x40_white.png"
                         href="https://www.instagram.com/choosecleanwater"
@@ -369,7 +452,7 @@
         <!-- END: Pre-footer (Choose clean water) -->
 
         <!-- START: Footer menu bar (Choose clean water) -->
-        <mj-section background-color="#252525" padding="0">
+        <mj-section css-class="footer-menu-block block" background-color="#252525" padding="0">
             <mj-column>
                 <mj-navbar>
                     <mj-navbar-link href="https://www.choosecleanwater.org/take-action" color="#ffffff">
@@ -390,7 +473,7 @@
         <!-- END: Footer menu bar (Choose clean water) -->
 
         <!-- START: Footer (Choose clean water) -->
-        <mj-section background-color="#ffffff">
+        <mj-section css-class="footer-block block" background-color="#ffffff">
             <mj-column>
                 <mj-image
                     src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/New_NWF_Logo.png?v=1710256205000"

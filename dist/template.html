@@ -219,15 +219,93 @@
                 cyan: #a3d3d6
                 green/blue: #e0e9ea
             */
+    :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+    }
+
+    .dark-only {
+      display: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .light-only {
+        display: none !important;
+      }
+
+      .dark-only {
+        display: block !important;
+      }
+
+      body,
+      .email-body {
+        color: #eeeeee !important;
+        background-color: #171819 !important;
+      }
+
+      a {
+        color: #798283 !important;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: #798283 !important;
+      }
+
+      .block,
+      .block>table,
+      .spacer-block td {
+        background-color: #0e0f0f !important;
+      }
+
+      .header-block.block,
+      .header-block.block>table {
+        background-color: #121314 !important;
+      }
+
+      .pre-footer-block.block,
+      .pre-footer-block.block>table {
+        background-color: #1f2021 !important;
+      }
+
+      .footer-menu-block.block,
+      .footer-menu-block.block>table {
+        background-color: #121314 !important;
+      }
+
+      .button td,
+      .button a {
+        background-color: #eaebec !important;
+        color: #121314 !important;
+      }
+
+      .card-block .card-inner td {
+        background-color: #1f2021 !important;
+      }
+
+      .side-by-side-card-block .card-inner>table table>tbody>tr>td {
+        background-color: #1f2021 !important;
+      }
+
+      .social-link table {
+        background-color: #1f2021 !important;
+      }
+    }
 
   </style>
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
 </head>
 
 <body style="word-spacing:normal;background-color:#f4f4f4;">
-  <div style="background-color:#f4f4f4;" lang="und" dir="auto">
+  <div class="email-body" style="background-color:#f4f4f4;" lang="und" dir="auto">
     <!-- START: Main Content --><!-- START: Header -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#4A8D65" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="background:#4A8D65;background-color:#4A8D65;margin:0px auto;max-width:600px;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="header-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#4A8D65" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="header-block block" style="background:#4A8D65;background-color:#4A8D65;margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#4A8D65;background-color:#4A8D65;width:100%;">
         <tbody>
           <tr>
@@ -245,7 +323,7 @@
                               <tr>
                                 <td style="width:200px;">
                                   <a href="https://www.nwf.org" target="_blank">
-                                    <img alt="" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/2023NWF_Logo_Black-optimized.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="200" height="auto" />
+                                    <img alt="" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/New_NWF_Logo.png?v=1710256205000" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="200" height="auto" />
                                   </a>
                                 </td>
                               </tr>
@@ -261,7 +339,7 @@
                   <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle;" width="100%">
                     <tbody>
                       <tr>
-                        <td align="right" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                        <td align="right" class="button" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                           <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
                             <tbody>
                               <tr>
@@ -286,8 +364,8 @@
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
     <!-- END: Header --><!-- START: WYSIWYG (Text content) -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="text-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="text-block block" style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
         <tbody>
           <tr>
@@ -316,8 +394,8 @@
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
     <!-- END: WYSIWYG (Text content) --><!-- START: Image -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="image-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="image-block block" style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
         <tbody>
           <tr>
@@ -352,8 +430,8 @@
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
     <!-- END: Image --><!-- START: Image - Fixed Size -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="fixed-image-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="fixed-image-block block" style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
         <tbody>
           <tr>
@@ -388,8 +466,8 @@
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
     <!-- END: Image - Fixed Size --><!-- START: CTA Button -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="cta-button-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="cta-button-block block" style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
         <tbody>
           <tr>
@@ -399,7 +477,7 @@
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                   <tbody>
                     <tr>
-                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                      <td align="left" class="button" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
                           <tbody>
                             <tr>
@@ -422,8 +500,8 @@
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
     <!-- END: CTA Button --><!-- START: Signature card -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="signature-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="signature-block block" style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
         <tbody>
           <tr>
@@ -475,14 +553,14 @@
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
     <!-- END: Signature card --><!-- START: Card -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="card-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="card-block block" style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
         <tbody>
           <tr>
             <td style="direction:ltr;font-size:0px;padding:10px 25px;text-align:center;">
-              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:550px;" ><![endif]-->
-              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="card-inner-outlook" style="vertical-align:top;width:550px;" ><![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix card-inner" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                   <tbody>
                     <tr>
@@ -543,14 +621,14 @@
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
     <!-- END: Card --><!-- START: Cards side by side -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="side-by-side-card-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="side-by-side-card-block block" style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
         <tbody>
           <tr>
             <td style="direction:ltr;font-size:0px;padding:10px 0px;text-align:center;">
-              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="responsive-col-padding-outlook" style="vertical-align:top;width:300px;" ><![endif]-->
-              <div class="mj-column-per-50 mj-outlook-group-fix responsive-col-padding" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="responsive-col-padding-outlook card-inner-outlook" style="vertical-align:top;width:300px;" ><![endif]-->
+              <div class="mj-column-per-50 mj-outlook-group-fix responsive-col-padding card-inner" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                   <tbody>
                     <tr>
@@ -608,8 +686,8 @@
                   </tbody>
                 </table>
               </div>
-              <!--[if mso | IE]></td><td class="responsive-col-padding-outlook" style="vertical-align:top;width:300px;" ><![endif]-->
-              <div class="mj-column-per-50 mj-outlook-group-fix responsive-col-padding" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+              <!--[if mso | IE]></td><td class="responsive-col-padding-outlook card-inner-outlook" style="vertical-align:top;width:300px;" ><![endif]-->
+              <div class="mj-column-per-50 mj-outlook-group-fix responsive-col-padding card-inner" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                   <tbody>
                     <tr>
@@ -675,8 +753,8 @@
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
     <!-- END: Cards side by side --><!-- START: Spacer -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="margin:0px auto;max-width:600px;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="spacer-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="spacer-block block" style="margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
         <tbody>
           <tr>
@@ -701,8 +779,8 @@
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
     <!-- END: Spacer --><!-- START: RAW HTML -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="raw-html-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="raw-html-block block" style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
         <tbody>
           <tr>
@@ -729,8 +807,8 @@
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
     <!-- END: RAW HTML --><!-- START: Pre-footer -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#4A8D65" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="background:#4A8D65;background-color:#4A8D65;margin:0px auto;max-width:600px;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="pre-footer-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#4A8D65" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="pre-footer-block block" style="background:#4A8D65;background-color:#4A8D65;margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#4A8D65;background-color:#4A8D65;width:100%;">
         <tbody>
           <tr>
@@ -740,7 +818,7 @@
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                   <tbody>
                     <tr>
-                      <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                      <td align="center" class="button" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
                           <tbody>
                             <tr>
@@ -762,7 +840,7 @@
                         <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" ><tr><td><![endif]-->
                         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
                           <tbody>
-                            <tr>
+                            <tr class="social-link">
                               <td style="padding:4px;vertical-align:middle;">
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#4A8D65;border-radius:3px;width:40px;">
                                   <tbody>
@@ -782,7 +860,7 @@
                         <!--[if mso | IE]></td><td><![endif]-->
                         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
                           <tbody>
-                            <tr>
+                            <tr class="social-link">
                               <td style="padding:4px;vertical-align:middle;">
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#4A8D65;border-radius:3px;width:40px;">
                                   <tbody>
@@ -802,7 +880,7 @@
                         <!--[if mso | IE]></td><td><![endif]-->
                         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
                           <tbody>
-                            <tr>
+                            <tr class="social-link">
                               <td style="padding:4px;vertical-align:middle;">
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#4A8D65;border-radius:3px;width:40px;">
                                   <tbody>
@@ -833,8 +911,8 @@
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
     <!-- END: Pre-footer --><!-- START: Footer menu bar -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#252525" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="background:#252525;background-color:#252525;margin:0px auto;max-width:600px;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="footer-menu-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#252525" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="footer-menu-block block" style="background:#252525;background-color:#252525;margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#252525;background-color:#252525;width:100%;">
         <tbody>
           <tr>
@@ -869,8 +947,8 @@
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
     <!-- END: Footer menu bar --><!-- START: Footer -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="footer-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="footer-block block" style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
         <tbody>
           <tr>
@@ -915,8 +993,8 @@
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
     <!-- END: Footer --><!-- START: Pre-footer (Choose clean water) -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#0093d0" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="background:#0093d0;background-color:#0093d0;margin:0px auto;max-width:600px;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="pre-footer-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#0093d0" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="pre-footer-block block" style="background:#0093d0;background-color:#0093d0;margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0093d0;background-color:#0093d0;width:100%;">
         <tbody>
           <tr>
@@ -935,7 +1013,7 @@
                         <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" ><tr><td><![endif]-->
                         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
                           <tbody>
-                            <tr>
+                            <tr class="social-link">
                               <td style="padding:4px;vertical-align:middle;">
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0093d0;border-radius:3px;width:40px;">
                                   <tbody>
@@ -955,7 +1033,7 @@
                         <!--[if mso | IE]></td><td><![endif]-->
                         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
                           <tbody>
-                            <tr>
+                            <tr class="social-link">
                               <td style="padding:4px;vertical-align:middle;">
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0093d0;border-radius:3px;width:40px;">
                                   <tbody>
@@ -975,7 +1053,7 @@
                         <!--[if mso | IE]></td><td><![endif]-->
                         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
                           <tbody>
-                            <tr>
+                            <tr class="social-link">
                               <td style="padding:4px;vertical-align:middle;">
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0093d0;border-radius:3px;width:40px;">
                                   <tbody>
@@ -1006,8 +1084,8 @@
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
     <!-- END: Pre-footer (Choose clean water) --><!-- START: Footer menu bar (Choose clean water) -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#252525" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="background:#252525;background-color:#252525;margin:0px auto;max-width:600px;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="footer-menu-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#252525" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="footer-menu-block block" style="background:#252525;background-color:#252525;margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#252525;background-color:#252525;width:100%;">
         <tbody>
           <tr>
@@ -1042,8 +1120,8 @@
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
     <!-- END: Footer menu bar (Choose clean water) --><!-- START: Footer (Choose clean water) -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="footer-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="footer-block block" style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
         <tbody>
           <tr>
