@@ -40,6 +40,10 @@
                 margin-bottom: 0;
             }
 
+            .mobile-only {
+                display: none!important;
+            }
+
             @media (max-width: 599px) {
                 .responsive-col-padding > table > tbody > tr > td {
                     padding: 0 25px 20px!important;
@@ -57,22 +61,19 @@
                     width: 70%!important;
                 }
             }
-            /*
-              Colors:
-                light green: #c3c37e
-                dark green: #4A8D65
-                light blue: #d8eff6
-                black: #272b2d
-                blue/black: #132a44
-                light black: #252525
-                white: #ffffff
-                Choose clean water blue: #0093d0
-                orange: #cc4b24
-                cyan: #a3d3d6
-                green/blue: #e0e9ea
-            */
+
+            .hide-content {
+                display: none !important;
+                mso-hide: all;
+            }
+
+            .hide-content * {
+                display: none !important;
+                mso-hide: all;
+            }
         </mj-style>
         <mj-style>
+            /* dark mode styles */
             :root {
                 color-scheme: light dark;
                 supported-color-schemes: light dark;
@@ -81,6 +82,15 @@
             .dark-only {
                 display: none;
             }
+
+            [data-ogsc] .dark-only {
+                display: block !important;
+            }
+
+            [data-ogsc] .light-only {
+                display: none !important;
+            }
+
 
             @media (prefers-color-scheme: dark) {
                 .light-only {
@@ -251,6 +261,7 @@
                     src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Article4_Newsletter_500x224.jpg"
                     alt="Custom alt text"
                     padding="0"
+                    fluid-on-mobile="true"
                 />
                 <mj-text container-background-color="#e0e9ea" padding="16px 25px 0px" css-class="wysiwyg">
                     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
@@ -269,6 +280,33 @@
             </mj-column>
         </mj-section>
         <!-- END: Card -->
+
+        <!-- START: Card (not full width mobile image) -->
+        <mj-section css-class="card-block block" background-color="#ffffff" padding="10px 25px">
+            <mj-column css-class="card-inner" padding="0px 0px 16px" background-color="#ffffff">
+                <mj-image
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/GrayCrossbodyBag_Premium.jpg"
+                        width="145px"
+                        alt="Custom alt text"
+                        padding="0"
+                />
+                <mj-text container-background-color="#ffffff" padding="16px 25px 0px" css-class="wysiwyg">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                    <p>Thinking about the perfect costume to wear? Some wildlife appear as if they're already ready to trick-or-treat. Take a look at some critters who are in the Halloween spirit all year long.</p>
+                </mj-text>
+                <mj-text container-background-color="#ffffff" font-size="18px" padding="16px 25px 0px" css-class="wysiwyg">
+                    <p><a href="#" target="_blank" style="text-decoration: none">Button Link Text (H3)</a></p>
+                </mj-text>
+                <mj-text container-background-color="#ffffff" padding="16px 25px 0px" css-class="wysiwyg">
+                    <p>Want more climate news?</p>
+                    <ul>
+                        <li><a href="#" target="_blank">Weighing Carbon: Understanding Carbon Emissions</a></li>
+                        <li><a href="#" target="_blank">Power Lines and Clean Energy: Our opportunity to learn from the past</a></li>
+                    </ul>
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <!-- END: Card (not full width mobile image) -->
 
         <!-- START: Cards side by side -->
         <mj-section css-class="side-by-side-card-block block" background-color="#ffffff" padding="10px 0px" >
@@ -320,6 +358,58 @@
             </mj-column>
         </mj-section>
         <!-- END: Cards side by side -->
+
+        <!-- START: Cards side by side (not full width mobile image) -->
+        <mj-section css-class="side-by-side-card-block block" background-color="#ffffff" padding="10px 0px" >
+            <mj-column padding="0px 12px 0px 25px" css-class="responsive-col-padding card-inner">
+                <mj-image
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/GrayCrossbodyBag_Premium.jpg"
+                        alt="Custom alt text"
+                        padding="0"
+                        width="145px"
+                />
+                <mj-text container-background-color="#ffffff" padding="16px 25px 0px" css-class="wysiwyg">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                    <p>Thinking about the perfect costume to wear? Some wildlife appear as if they're already ready to trick-or-treat. Take a look at some critters who are in the Halloween spirit all year long.</p>
+                </mj-text>
+                <mj-text container-background-color="#ffffff" font-size="18px" padding="16px 25px 0px" css-class="wysiwyg">
+                    <p><a href="#" target="_blank" style="text-decoration: none">Button Link Text (H3)</a></p>
+                </mj-text>
+                <mj-text container-background-color="#ffffff" padding="16px 25px 0px" css-class="wysiwyg">
+                    <p>Want more climate news?</p>
+                    <ul>
+                        <li><a href="#" target="_blank">Weighing Carbon: Understanding Carbon Emissions</a></li>
+                        <li><a href="#" target="_blank">Power Lines and Clean Energy: Our opportunity to learn from the past</a></li>
+                    </ul>
+                </mj-text>
+                <mj-spacer height="16px" container-background-color="#ffffff" />
+            </mj-column>
+            <mj-column padding="0px 25px 0px 12px" css-class="responsive-col-padding card-inner">
+                <mj-image
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/CrossbodyBagandFleeceBlanket_Premium.jpg"
+                        alt="Custom alt text"
+                        padding="0"
+                        fluid-on-mobile="true"
+                        width="145px"
+                />
+                <mj-text container-background-color="#ffffff" padding="16px 25px 0px" css-class="wysiwyg">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                    <p>Thinking about the perfect costume to wear? Some wildlife appear as if they're already ready to trick-or-treat. Take a look at some critters who are in the Halloween spirit all year long.</p>
+                </mj-text>
+                <mj-text container-background-color="#ffffff" font-size="18px" padding="16px 25px 0px" css-class="wysiwyg">
+                    <p><a href="#" target="_blank" style="text-decoration: none">Button Link Text (H3)</a></p>
+                </mj-text>
+                <mj-text container-background-color="#ffffff" padding="16px 25px 0px" css-class="wysiwyg">
+                    <p>Want more climate news?</p>
+                    <ul>
+                        <li><a href="#" target="_blank">Weighing Carbon: Understanding Carbon Emissions</a></li>
+                        <li><a href="#" target="_blank">Power Lines and Clean Energy: Our opportunity to learn from the past</a></li>
+                    </ul>
+                </mj-text>
+                <mj-spacer height="16px" container-background-color="#ffffff" />
+            </mj-column>
+        </mj-section>
+        <!-- END: Cards side by side (not full width mobile image) -->
 
         <!-- START: Spacer -->
         <mj-section css-class="spacer-block block" padding="0">

@@ -187,6 +187,10 @@
       margin-bottom: 0;
     }
 
+    .mobile-only {
+      display: none !important;
+    }
+
     @media (max-width: 599px) {
       .responsive-col-padding>table>tbody>tr>td {
         padding: 0 25px 20px !important;
@@ -205,20 +209,17 @@
       }
     }
 
-    /*
-              Colors:
-                light green: #c3c37e
-                dark green: #4A8D65
-                light blue: #d8eff6
-                black: #272b2d
-                blue/black: #132a44
-                light black: #252525
-                white: #ffffff
-                Choose clean water blue: #0093d0
-                orange: #cc4b24
-                cyan: #a3d3d6
-                green/blue: #e0e9ea
-            */
+    .hide-content {
+      display: none !important;
+      mso-hide: all;
+    }
+
+    .hide-content * {
+      display: none !important;
+      mso-hide: all;
+    }
+
+    /* dark mode styles */
     :root {
       color-scheme: light dark;
       supported-color-schemes: light dark;
@@ -226,6 +227,14 @@
 
     .dark-only {
       display: none;
+    }
+
+    [data-ogsc] .dark-only {
+      display: block !important;
+    }
+
+    [data-ogsc] .light-only {
+      display: none !important;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -569,10 +578,10 @@
                           <tbody>
                             <tr>
                               <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
                                   <tbody>
                                     <tr>
-                                      <td style="width:550px;">
+                                      <td style="width:550px;" class="mj-full-width-mobile">
                                         <img alt="Custom alt text" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Article4_Newsletter_500x224.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="550" height="auto" />
                                       </td>
                                     </tr>
@@ -620,7 +629,75 @@
       </table>
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
-    <!-- END: Card --><!-- START: Cards side by side -->
+    <!-- END: Card --><!-- START: Card (not full width mobile image) -->
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="card-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="card-block block" style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:10px 25px;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="card-inner-outlook" style="vertical-align:top;width:550px;" ><![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix card-inner" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="background-color:#ffffff;vertical-align:top;padding:0px 0px 16px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                          <tbody>
+                            <tr>
+                              <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                                  <tbody>
+                                    <tr>
+                                      <td style="width:145px;">
+                                        <img alt="Custom alt text" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/GrayCrossbodyBag_Premium.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="145" height="auto" />
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="wysiwyg" style="background:#ffffff;font-size:0px;padding:16px 25px 0px;word-break:break-word;">
+                                <div style="font-family:Fira Sans, Arial, sans-serif;font-size:16px;line-height:1.25;text-align:left;color:inherit;">
+                                  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                                  <p>Thinking about the perfect costume to wear? Some wildlife appear as if they're already ready to trick-or-treat. Take a look at some critters who are in the Halloween spirit all year long.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="wysiwyg" style="background:#ffffff;font-size:0px;padding:16px 25px 0px;word-break:break-word;">
+                                <div style="font-family:Fira Sans, Arial, sans-serif;font-size:18px;line-height:1.25;text-align:left;color:inherit;">
+                                  <p><a href="#" target="_blank" style="text-decoration: none">Button Link Text (H3)</a></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="wysiwyg" style="background:#ffffff;font-size:0px;padding:16px 25px 0px;word-break:break-word;">
+                                <div style="font-family:Fira Sans, Arial, sans-serif;font-size:16px;line-height:1.25;text-align:left;color:inherit;">
+                                  <p>Want more climate news?</p>
+                                  <ul>
+                                    <li><a href="#" target="_blank">Weighing Carbon: Understanding Carbon Emissions</a></li>
+                                    <li><a href="#" target="_blank">Power Lines and Clean Energy: Our opportunity to learn from the past</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><![endif]-->
+    <!-- END: Card (not full width mobile image) --><!-- START: Cards side by side -->
     <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="side-by-side-card-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     <div class="side-by-side-card-block block" style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
@@ -752,7 +829,139 @@
       </table>
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
-    <!-- END: Cards side by side --><!-- START: Spacer -->
+    <!-- END: Cards side by side --><!-- START: Cards side by side (not full width mobile image) -->
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="side-by-side-card-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="side-by-side-card-block block" style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:10px 0px;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="responsive-col-padding-outlook card-inner-outlook" style="vertical-align:top;width:300px;" ><![endif]-->
+              <div class="mj-column-per-50 mj-outlook-group-fix responsive-col-padding card-inner" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:0px 12px 0px 25px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                          <tbody>
+                            <tr>
+                              <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                                  <tbody>
+                                    <tr>
+                                      <td style="width:145px;">
+                                        <img alt="Custom alt text" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/GrayCrossbodyBag_Premium.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="145" height="auto" />
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="wysiwyg" style="background:#ffffff;font-size:0px;padding:16px 25px 0px;word-break:break-word;">
+                                <div style="font-family:Fira Sans, Arial, sans-serif;font-size:16px;line-height:1.25;text-align:left;color:inherit;">
+                                  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                                  <p>Thinking about the perfect costume to wear? Some wildlife appear as if they're already ready to trick-or-treat. Take a look at some critters who are in the Halloween spirit all year long.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="wysiwyg" style="background:#ffffff;font-size:0px;padding:16px 25px 0px;word-break:break-word;">
+                                <div style="font-family:Fira Sans, Arial, sans-serif;font-size:18px;line-height:1.25;text-align:left;color:inherit;">
+                                  <p><a href="#" target="_blank" style="text-decoration: none">Button Link Text (H3)</a></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="wysiwyg" style="background:#ffffff;font-size:0px;padding:16px 25px 0px;word-break:break-word;">
+                                <div style="font-family:Fira Sans, Arial, sans-serif;font-size:16px;line-height:1.25;text-align:left;color:inherit;">
+                                  <p>Want more climate news?</p>
+                                  <ul>
+                                    <li><a href="#" target="_blank">Weighing Carbon: Understanding Carbon Emissions</a></li>
+                                    <li><a href="#" target="_blank">Power Lines and Clean Energy: Our opportunity to learn from the past</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="background:#ffffff;font-size:0px;word-break:break-word;">
+                                <div style="height:16px;line-height:16px;">&#8202;</div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td><td class="responsive-col-padding-outlook card-inner-outlook" style="vertical-align:top;width:300px;" ><![endif]-->
+              <div class="mj-column-per-50 mj-outlook-group-fix responsive-col-padding card-inner" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:0px 25px 0px 12px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                          <tbody>
+                            <tr>
+                              <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                                  <tbody>
+                                    <tr>
+                                      <td style="width:145px;" class="mj-full-width-mobile">
+                                        <img alt="Custom alt text" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/CrossbodyBagandFleeceBlanket_Premium.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="145" height="auto" />
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="wysiwyg" style="background:#ffffff;font-size:0px;padding:16px 25px 0px;word-break:break-word;">
+                                <div style="font-family:Fira Sans, Arial, sans-serif;font-size:16px;line-height:1.25;text-align:left;color:inherit;">
+                                  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                                  <p>Thinking about the perfect costume to wear? Some wildlife appear as if they're already ready to trick-or-treat. Take a look at some critters who are in the Halloween spirit all year long.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="wysiwyg" style="background:#ffffff;font-size:0px;padding:16px 25px 0px;word-break:break-word;">
+                                <div style="font-family:Fira Sans, Arial, sans-serif;font-size:18px;line-height:1.25;text-align:left;color:inherit;">
+                                  <p><a href="#" target="_blank" style="text-decoration: none">Button Link Text (H3)</a></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="wysiwyg" style="background:#ffffff;font-size:0px;padding:16px 25px 0px;word-break:break-word;">
+                                <div style="font-family:Fira Sans, Arial, sans-serif;font-size:16px;line-height:1.25;text-align:left;color:inherit;">
+                                  <p>Want more climate news?</p>
+                                  <ul>
+                                    <li><a href="#" target="_blank">Weighing Carbon: Understanding Carbon Emissions</a></li>
+                                    <li><a href="#" target="_blank">Power Lines and Clean Energy: Our opportunity to learn from the past</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="background:#ffffff;font-size:0px;word-break:break-word;">
+                                <div style="height:16px;line-height:16px;">&#8202;</div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><![endif]-->
+    <!-- END: Cards side by side (not full width mobile image) --><!-- START: Spacer -->
     <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="spacer-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     <div class="spacer-block block" style="margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
