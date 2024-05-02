@@ -2,10 +2,11 @@
     <mj-head>
         <mj-breakpoint width="600px"/>
         <mj-font name="Fira Sans" href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" />
+        <mj-font name="Patua One" href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" />
         <mj-attributes>
             <mj-all color="inherit" font-family="Fira Sans, Arial, sans-serif" />
             <mj-text font-size="16px" line-height="1.25" />
-            <mj-button font-size="18px" border-radius="0" />
+            <mj-button font-size="14px" border-radius="6" />
             <mj-navbar-link text-transform="none" />
         </mj-attributes>
         <mj-raw>
@@ -30,6 +31,7 @@
 
             h1,h2,h3,h4,h5,h6 {
                 color: #4A8D65;
+                font-family: Patua One, Fira Sans, Helvetica, Arial, sans-serif;
             }
 
             .wysiwyg > div > *:first-child {
@@ -59,6 +61,30 @@
 
                 .signature-text {
                     width: 70%!important;
+                }
+
+                .header-block > table > tbody > tr > td {
+                    padding: 20px 0 0!important;
+                }
+
+                .header-block .button {
+                    text-align: center!important;
+                    padding: 24px 0 0!important;
+                }
+
+                .header-block .button table {
+                    width: 100%!important;
+                }
+
+                .header-block .button td {
+                    border-radius: 0!important;
+                }
+
+                .header-block .button a {
+                    border-radius: 0!important;
+                    font-weight: bold!important;
+                    width: 100%!important;
+                    padding: 15px 0!important;
                 }
             }
 
@@ -160,43 +186,53 @@
         <!-- START: Main Content -->
         <!-- START: Header -->
         <mj-section css-class="header-block block" background-color="#4A8D65">
-            <mj-group>
-                <mj-column vertical-align="middle">
-                    <mj-image
-                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/logo-nwf-standard.png?v=1712661442000"
-                        width="200px"
-                        align="left"
-                        href="https://www.nwf.org"
-                        padding="0px 25px"
-                        alt="NWF Logo"
-                        css-class="light-only"
-                    />
-                    <mj-raw><!--[if !mso]><!--></mj-raw>
-                    <mj-image
-                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/NWF_Logo_DRAFT-solid-background.jpg?v=1713366790000"
-                        width="200px"
-                        align="left"
-                        href="https://www.nwf.org"
-                        padding="0px 25px"
-                        alt="NWF Logo"
-                        css-class="dark-only"
-                    />
-                    <mj-raw><!--<![endif]--></mj-raw>
-                </mj-column>
-                <mj-column vertical-align="middle">
-                    <mj-button css-class="button" color="#132a44" background-color="#d8eff6"  href="https://support.nwf.org/page/64371/donate/1" align="right">
-                        Donate
-                    </mj-button>
-                </mj-column>
-            </mj-group>
+            <mj-column vertical-align="middle" width="63%">
+                <mj-image
+                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/logo-nwf-standard.png?v=1712661442000"
+                    width="200px"
+                    align="left"
+                    href="https://www.nwf.org"
+                    padding="0px 0px 0px 25px"
+                    alt="NWF Logo"
+                    css-class="light-only"
+                />
+                <mj-raw><!--[if !mso]><!--></mj-raw>
+                <mj-image
+                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/NWF_Logo_DRAFT-solid-background.jpg?v=1713366790000"
+                    width="200px"
+                    align="left"
+                    href="https://www.nwf.org"
+                    padding="0px 0px 0px 25px"
+                    alt="NWF Logo"
+                    css-class="dark-only"
+                />
+                <mj-raw><!--<![endif]--></mj-raw>
+            </mj-column>
+            <mj-column vertical-align="middle" width="37%">
+                <mj-button inner-padding="15px 25px" css-class="button" color="#132a44" background-color="#d8eff6"  href="https://support.nwf.org/page/64371/donate/1" align="right" border-radius="6px">
+                    GIVE NOW
+                </mj-button>
+            </mj-column>
         </mj-section>
         <!-- END: Header -->
+
+        <!-- START: Heading w/ borders -->
+        <mj-section css-class="text-block block" background-color="#ffffff" padding="0">
+            <mj-column>
+                <mj-text padding="0 25px" css-class="wysiwyg" align="center">
+                    <h2 style="margin: 0; padding: 0; font-family: 'Patua One', Arial, sans-serif; font-size:24px; line-height:1.25; color: #4A8D65;border-top: 1px solid #4A8D65;border-bottom:1px solid #4A8D65">
+                        Across The Federation
+                    </h2>
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <!-- END: Heading w/ borders -->
 
         <!-- START: WYSIWYG (Text content) -->
         <mj-section css-class="text-block block" background-color="#ffffff">
             <mj-column>
                 <mj-text padding="0 25px" css-class="wysiwyg">
-                    <h1>Hi there!</h1>
+                    <h1 style="font-family: Patua One, Helvetica, Arial, sans-serif">Hi there!</h1>
                     <p>Thanks for signing up for our newsletter. We're excited to have you on board.</p>
                     <a href="test.com">Link</a>
                 </mj-text>
@@ -235,7 +271,15 @@
         <!-- START: CTA Button -->
         <mj-section css-class="cta-button-block block" background-color="#ffffff" padding="0">
             <mj-column>
-                <mj-button css-class="button" inner-padding="15px 25px" color="#132a44" background-color="#d8eff6"  href="https://support.nwf.org/page/64371/donate/1" align="left">
+                <mj-button
+                        css-class="button"
+                        inner-padding="15px 25px"
+                        color="#132a44"
+                        background-color="#d8eff6"
+                        href="https://support.nwf.org/page/64371/donate/1"
+                        align="left"
+                        border-radius="6px"
+                >
                     Donate
                 </mj-button>
             </mj-column>
@@ -275,6 +319,7 @@
                     alt="Custom alt text"
                     padding="0"
                     fluid-on-mobile="true"
+                    href="https://www.nwf.org/"
                 />
                 <mj-text container-background-color="#e0e9ea" padding="16px 25px 0px" css-class="wysiwyg">
                     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
@@ -302,6 +347,7 @@
                         width="145px"
                         alt="Custom alt text"
                         padding="0"
+                        href="https://www.nwf.org/"
                 />
                 <mj-text container-background-color="#ffffff" padding="16px 25px 0px" css-class="wysiwyg">
                     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
@@ -329,6 +375,7 @@
                     alt="Custom alt text"
                     padding="0"
                     fluid-on-mobile="true"
+                    href="https://www.nwf.org/"
                 />
                 <mj-text container-background-color="#e0e9ea" padding="16px 25px 0px" css-class="wysiwyg">
                     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
@@ -352,6 +399,7 @@
                     alt="Custom alt text"
                     padding="0"
                     fluid-on-mobile="true"
+                    href="https://www.nwf.org/"
                 />
                 <mj-text container-background-color="#e0e9ea" padding="16px 25px 0px" css-class="wysiwyg">
                     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
@@ -380,6 +428,7 @@
                         alt="Custom alt text"
                         padding="0"
                         width="145px"
+                        href="https://www.nwf.org/"
                 />
                 <mj-text container-background-color="#ffffff" padding="16px 25px 0px" css-class="wysiwyg">
                     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
@@ -404,6 +453,7 @@
                         padding="0"
                         fluid-on-mobile="true"
                         width="145px"
+                        href="https://www.nwf.org/"
                 />
                 <mj-text container-background-color="#ffffff" padding="16px 25px 0px" css-class="wysiwyg">
                     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
@@ -443,8 +493,8 @@
         <!-- START: Pre-footer -->
         <mj-section css-class="pre-footer-block block" background-color="#4A8D65">
             <mj-column>
-                <mj-button css-class="button" color="#132a44" background-color="#d8eff6"  href="https://support.nwf.org/page/64371/donate/1">
-                    Donate
+                <mj-button inner-padding="15px 25px" css-class="button" color="#132a44" background-color="#d8eff6"  href="https://support.nwf.org/page/64371/donate/1" border-radius="6px">
+                    DONATE
                 </mj-button>
                 <mj-text align="center" color="#ffffff" font-size="20px">
                     Join the Conversation
@@ -461,7 +511,7 @@
                     <mj-social-element
                         css-class="social-link"
                         name="twitter-noshare"
-                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Twitter_Icon_40x40_white.png"
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/circle_x_80.png?v=1714667491000"
                         href="https://twitter.com/NWF"
                         background-color="#4A8D65"
                         alt="Twitter Logo"
@@ -474,6 +524,14 @@
                         background-color="#4A8D65"
                         alt="Instagram Logo"
                     />
+                    <mj-social-element
+                        css-class="social-link"
+                        name="linkedin-noshare"
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/circle_linkedin_80.png?v=1714667489000"
+                        href="https://www.linkedin.com/company/national-wildlife-federation"
+                        background-color="#4A8D65"
+                        alt="LinkedIn Logo"
+                    />
                 </mj-social>
             </mj-column>
         </mj-section>
@@ -483,16 +541,16 @@
         <mj-section css-class="footer-menu-block block" background-color="#252525" padding="0">
             <mj-column>
                 <mj-navbar>
-                    <mj-navbar-link href="https://support.nwf.org/page/9547/subscribe/1?ea.tracking.id=EML_FTR~b1e42b72" color="#ffffff">
+                    <mj-navbar-link href="{campaignpage_url~29357~https://support.nwf.org/page/9547/subscribe/1?ea.tracking.id=EML_FTR~b1e42b72}" color="#ffffff">
                         Sign up
                     </mj-navbar-link>
-                    <mj-navbar-link href="https://www.nwf.org/About-Us/Contact-Us" color="#ffffff">
+                    <mj-navbar-link href="{external_url~https://www.nwf.org/About-Us/Contact-Us~dd326e70}" color="#ffffff">
                         Contact Us
                     </mj-navbar-link>
-                    <mj-navbar-link href="https://www.nwf.org/Privacy-Policy" color="#ffffff">
+                    <mj-navbar-link href="{external_url~https://www.nwf.org/Privacy-Policy~4bbd96dd}" color="#ffffff">
                         Privacy Policy
                     </mj-navbar-link>
-                    <mj-navbar-link href="https://www.nwf.org" color="#ffffff">
+                    <mj-navbar-link href="{external_url~https://www.nwf.org~b8580634}" color="#ffffff">
                         NWF.org
                     </mj-navbar-link>
                 </mj-navbar>
@@ -553,7 +611,7 @@
                     <mj-social-element
                         css-class="social-link"
                         name="twitter-noshare"
-                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Twitter_Icon_40x40_white.png"
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/circle_x_80.png?v=1714667491000"
                         href="https://twitter.com/ChooseCleanH2O"
                         background-color="#0093d0"
                         alt="Twitter Logo"
@@ -575,16 +633,16 @@
         <mj-section css-class="footer-menu-block block" background-color="#252525" padding="0">
             <mj-column>
                 <mj-navbar>
-                    <mj-navbar-link href="https://www.choosecleanwater.org/take-action" color="#ffffff">
+                    <mj-navbar-link href="{external_url~https://www.choosecleanwater.org/take-action~e312cdb3}" color="#ffffff">
                         Sign up
                     </mj-navbar-link>
-                    <mj-navbar-link href="https://www.choosecleanwater.org/joinus" color="#ffffff">
+                    <mj-navbar-link href="{external_url~https://www.choosecleanwater.org/joinus~19176fda}" color="#ffffff">
                         Contact Us
                     </mj-navbar-link>
-                    <mj-navbar-link href="https://www.nwf.org/Privacy-Policy" color="#ffffff">
+                    <mj-navbar-link href="{external_url~https://www.nwf.org/Privacy-Policy~b3259752}" color="#ffffff">
                         Privacy Policy
                     </mj-navbar-link>
-                    <mj-navbar-link href="https://www.nwf.org" color="#ffffff">
+                    <mj-navbar-link href="{external_url~https://www.nwf.org~b8580634}" color="#ffffff">
                         NWF.org
                     </mj-navbar-link>
                 </mj-navbar>
