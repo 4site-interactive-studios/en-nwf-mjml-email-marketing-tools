@@ -579,7 +579,7 @@
                 <mj-raw><!--<![endif]--></mj-raw>
                 <mj-text align="center" font-size="11px" line-height="18px" padding="10px 25px 0">
                     <p>
-                        © 2024 The National Wildlife Federation, all rights reserved
+                        © ${page~currentYear} The National Wildlife Federation, all rights reserved
                         <br>
                         The National Wildlife Federation is a 501(c)(3) non-profit organization
                         <br>
@@ -671,7 +671,7 @@
                 <mj-raw><!--<![endif]--></mj-raw>
                 <mj-text align="center" font-size="11px" line-height="18px" padding="10px 25px 0">
                     <p>
-                        © 2024 The National Wildlife Federation, all rights reserved
+                        © ${page~currentYear} The National Wildlife Federation, all rights reserved
                         <br>
                         The National Wildlife Federation is a 501(c)(3) non-profit organization
                         <br>
