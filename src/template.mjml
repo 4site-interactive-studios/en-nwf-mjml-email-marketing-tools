@@ -32,6 +32,7 @@
             h1,h2,h3,h4,h5,h6 {
                 color: #4A8D65;
                 font-family: Patua One, Fira Sans, Helvetica, Arial, sans-serif;
+                font-weight: normal;
             }
 
             .wysiwyg > div > *:first-child {
@@ -209,7 +210,7 @@
                 <mj-raw><!--<![endif]--></mj-raw>
             </mj-column>
             <mj-column vertical-align="middle" width="37%">
-                <mj-button inner-padding="15px 25px" css-class="button" color="#132a44" background-color="#d8eff6"  href="https://support.nwf.org/page/64371/donate/1" align="right" border-radius="6px">
+                <mj-button font-weight="bold" inner-padding="15px 25px" css-class="button" color="#132a44" background-color="#d8eff6"  href="https://support.nwf.org/page/64371/donate/1" align="right" border-radius="6px">
                     GIVE NOW
                 </mj-button>
             </mj-column>
@@ -279,6 +280,7 @@
                         href="https://support.nwf.org/page/64371/donate/1"
                         align="left"
                         border-radius="6px"
+                        font-weight="bold"
                 >
                     Donate
                 </mj-button>
@@ -493,11 +495,11 @@
         <!-- START: Pre-footer -->
         <mj-section css-class="pre-footer-block block" background-color="#4A8D65">
             <mj-column>
-                <mj-button inner-padding="15px 25px" css-class="button" color="#132a44" background-color="#d8eff6"  href="https://support.nwf.org/page/64371/donate/1" border-radius="6px">
+                <mj-button font-weight="bold" inner-padding="15px 25px" css-class="button" color="#132a44" background-color="#d8eff6"  href="https://support.nwf.org/page/64371/donate/1" border-radius="6px">
                     DONATE
                 </mj-button>
                 <mj-text align="center" color="#ffffff" font-size="20px">
-                    Join the Conversation
+                    <h3 style="color:#ffffff;font-size:18px;margin:0">Join the Conversation</h3>
                 </mj-text>
                 <mj-social font-size="15px" icon-size="40px" icon-padding="0 10px" mode="horizontal">
                     <mj-social-element
@@ -597,7 +599,7 @@
         <mj-section css-class="pre-footer-block block" background-color="#0093d0">
             <mj-column>
                 <mj-text align="center" color="#ffffff" font-size="20px">
-                    Join the Conversation
+                    <h3 style="color:#ffffff;font-size:18px;margin:0;">Join the Conversation</h3>
                 </mj-text>
                 <mj-social font-size="15px" icon-size="40px" icon-padding="0 10px" mode="horizontal">
                     <mj-social-element
