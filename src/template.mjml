@@ -23,7 +23,6 @@
                 color: #141414;
                 font-family: Hanken Grotesk, Helvetica, Arial, sans-serif;
                 font-size: 16px;
-                line-height: 22px;
             }
 
             a {
@@ -213,7 +212,7 @@
         <mj-section css-class="header-block block" background-color="#f4f4f4">
             <mj-column vertical-align="middle" width="63%">
                 <mj-image
-                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/logo-nwf-standard.png?v=1712661442000"
+                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/nwf_cropped_green.png?v=1722530603000"
                     width="200px"
                     align="left"
                     href="https://www.nwf.org"
@@ -223,7 +222,7 @@
                 />
                 <mj-raw><!--[if !mso]><!--></mj-raw>
                 <mj-image
-                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/NWF_Logo_DRAFT-solid-background.jpg?v=1713366790000"
+                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/nwf-green-dark-mode.png"
                     width="200px"
                     align="left"
                     href="https://www.nwf.org"
@@ -234,8 +233,8 @@
                 <mj-raw><!--<![endif]--></mj-raw>
             </mj-column>
             <mj-column vertical-align="middle" width="37%">
-                <mj-button letter-spacing="2px" font-weight="900" font-size="16px" inner-padding="15px 25px" css-class="button" color="#ffffff" background-color="#003057"  href="https://support.nwf.org/page/64371/donate/1" align="right">
-                    GIVE NOW
+                <mj-button letter-spacing="2px" font-weight="900" font-size="16px" inner-padding="15px 20px" css-class="button" color="#ffffff" background-color="#003057"  href="https://support.nwf.org/page/64371/donate/1" align="right">
+                    TAKE ACTION
                 </mj-button>
             </mj-column>
         </mj-section>
@@ -536,39 +535,39 @@
                     DONATE
                 </mj-button>
                 <mj-text align="center" color="#ffffff" font-size="20px">
-                    <h3 style="color:#141414;font-size:18px;margin:0">Join the Conversation</h3>
+                    <h3 style="color:#141414;font-size:18px;margin:0;text-transform: none">Join the Conversation</h3>
                 </mj-text>
                 <mj-social font-size="15px" icon-size="40px" icon-padding="0 10px" mode="horizontal">
                     <mj-social-element
                         css-class="social-link"
                         name="facebook-noshare"
-                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Facebook_Icon_40x40_white.png"
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Facebook_Icon_40x40_blue.png"
                         href="https://www.facebook.com/NationalWildlife"
-                        background-color="#003057"
+                        background-color="#f4f4f4"
                         alt="Facebook Logo"
                     />
                     <mj-social-element
                         css-class="social-link"
                         name="twitter-noshare"
-                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/circle_x_80.png?v=1714667491000"
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/circle_x_80_blue.png?"
                         href="https://twitter.com/NWF"
-                        background-color="#003057"
+                        background-color="#f4f4f4"
                         alt="Twitter Logo"
                     />
                     <mj-social-element
                         css-class="social-link"
                         name="instagram"
-                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Instagram_Icon_40x40_white.png"
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Instagram_Icon_40x40_blue.png"
                         href="https://www.instagram.com/nationalwildlife"
-                        background-color="#003057"
+                        background-color="#f4f4f4"
                         alt="Instagram Logo"
                     />
                     <mj-social-element
                         css-class="social-link"
                         name="linkedin-noshare"
-                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/circle_linkedin_80.png?v=1714667489000"
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/circle_linkedin_80_blue.png"
                         href="https://www.linkedin.com/company/national-wildlife-federation"
-                        background-color="#003057"
+                        background-color="#f4f4f4"
                         alt="LinkedIn Logo"
                     />
                 </mj-social>
@@ -602,7 +601,7 @@
             <mj-column>
                 <mj-image
                         alt="NWF Logo"
-                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/logo-nwf-standard.png?v=1712661442000"
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/nwf_cropped_green.png?v=1722530603000"
                         width="260px"
                         href="https://www.nwf.org"
                         css-class="light-only"
@@ -610,7 +609,7 @@
                 <mj-raw><!--[if !mso]><!--></mj-raw>
                 <mj-image
                         alt="NWF Logo"
-                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/NWF_Logo_DRAFT-solid-background.jpg?v=1713366790000"
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/nwf-green-dark-mode.png"
                         width="260px"
                         href="https://www.nwf.org"
                         css-class="dark-only"
@@ -636,7 +635,7 @@
         <mj-section css-class="pre-footer-block block" background-color="#0093d0">
             <mj-column>
                 <mj-text align="center" color="#ffffff" font-size="20px">
-                    <h3 style="color:#ffffff;font-size:18px;margin:0;">Join the Conversation</h3>
+                    <h3 style="color:#ffffff;font-size:18px;margin:0;text-transform: none">Join the Conversation</h3>
                 </mj-text>
                 <mj-social font-size="15px" icon-size="40px" icon-padding="0 10px" mode="horizontal">
                     <mj-social-element
@@ -694,7 +693,7 @@
             <mj-column>
                 <mj-image
                     alt="NWF Logo"
-                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/logo-nwf-standard.png?v=1712661442000"
+                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/nwf_cropped_green.png?v=1722530603000"
                     width="260px"
                     href="https://www.nwf.org"
                     css-class="light-only"
@@ -702,7 +701,7 @@
                 <mj-raw><!--[if !mso]><!--></mj-raw>
                 <mj-image
                     alt="NWF Logo"
-                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/NWF_Logo_DRAFT-solid-background.jpg?v=1713366790000"
+                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/nwf-green-dark-mode.png"
                     width="260px"
                     href="https://www.nwf.org"
                     css-class="dark-only"
