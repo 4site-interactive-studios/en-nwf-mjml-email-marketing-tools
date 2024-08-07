@@ -150,11 +150,11 @@
                 }
 
                 a {
-                    color: #798283 !important;
+                    color: #9ca4a5 !important;
                 }
 
                 h1,h2,h3,h4,h5,h6 {
-                    color:  #798283 !important;
+                    color:  #b0b4b5 !important;
                 }
 
                 .block,
@@ -193,7 +193,21 @@
                 }
 
                 .social-link table {
-                    background-color: #1f2021 !important;
+                    background-color: #b0b4b5 !important;
+                }
+
+                .social-link table td {
+                    padding: 0px !important;
+                }
+
+                .social-link table,
+                .social-link img {
+                    border-radius: 50% !important;
+                }
+
+                .social-link img {
+                    border: 1px solid #b0b4b5 !important;
+                    border-radius: 50% !important;
                 }
             }
 
