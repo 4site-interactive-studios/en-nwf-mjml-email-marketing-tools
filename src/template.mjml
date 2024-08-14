@@ -236,7 +236,7 @@
                 />
                 <mj-raw><!--[if !mso]><!--></mj-raw>
                 <mj-image
-                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/nwf-green-dark-mode.png"
+                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/nwf_cropped_white.png?v=1723561228000"
                     width="200px"
                     align="left"
                     href="https://www.nwf.org"
@@ -623,7 +623,7 @@
                 <mj-raw><!--[if !mso]><!--></mj-raw>
                 <mj-image
                         alt="NWF Logo"
-                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/nwf-green-dark-mode.png"
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/nwf_cropped_white.png?v=1723561228000"
                         width="260px"
                         href="https://www.nwf.org"
                         css-class="dark-only"
@@ -669,7 +669,7 @@
                         alt="Twitter Logo"
                     />
                     <mj-social-element
-                            css-class="social-link"
+                        css-class="social-link"
                         name="instagram"
                         src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/Instagram_Icon_40x40_white.png"
                         href="https://www.instagram.com/choosecleanwater"
@@ -715,7 +715,7 @@
                 <mj-raw><!--[if !mso]><!--></mj-raw>
                 <mj-image
                     alt="NWF Logo"
-                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/nwf-green-dark-mode.png"
+                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/nwf_cropped_white.png?v=1723561228000"
                     width="260px"
                     href="https://www.nwf.org"
                     css-class="dark-only"
