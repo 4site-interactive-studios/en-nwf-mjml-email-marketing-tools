@@ -236,7 +236,7 @@
                 />
                 <mj-raw><!--[if !mso]><!--></mj-raw>
                 <mj-image
-                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/nwf_cropped_white.png?v=1723561228000"
+                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/nwf_dark_mode_logo.png?v=1725553606000"
                     width="200px"
                     align="left"
                     href="https://www.nwf.org"
@@ -590,19 +590,19 @@
         <!-- END: Pre-footer -->
 
         <!-- START: Footer menu bar -->
-        <mj-section css-class="footer-menu-block block" background-color="#009B77" padding="0">
+        <mj-section css-class="footer-menu-block block" background-color="#00AD85" padding="0">
             <mj-column>
                 <mj-navbar>
-                    <mj-navbar-link href="{campaignpage_url~29357~https://support.nwf.org/page/9547/subscribe/1?ea.tracking.id=EML_FTR~b1e42b72}" color="#141414" font-weight="bold">
+                    <mj-navbar-link href="{campaignpage_url~29357~https://support.nwf.org/page/9547/subscribe/1?ea.tracking.id=EML_FTR~b1e42b72}" color="#000000" font-weight="bold">
                         Sign up
                     </mj-navbar-link>
-                    <mj-navbar-link href="{external_url~https://www.nwf.org/About-Us/Contact-Us~dd326e70}" color="#141414" font-weight="bold">
+                    <mj-navbar-link href="{external_url~https://www.nwf.org/About-Us/Contact-Us~dd326e70}" color="#000000" font-weight="bold">
                         Contact Us
                     </mj-navbar-link>
-                    <mj-navbar-link href="{external_url~https://www.nwf.org/Privacy-Policy~4bbd96dd}" color="#141414" font-weight="bold">
+                    <mj-navbar-link href="{external_url~https://www.nwf.org/Privacy-Policy~4bbd96dd}" color="#000000" font-weight="bold">
                         Privacy Policy
                     </mj-navbar-link>
-                    <mj-navbar-link href="{external_url~https://www.nwf.org~b8580634}" color="#141414" font-weight="bold">
+                    <mj-navbar-link href="{external_url~https://www.nwf.org~b8580634}" color="#000000" font-weight="bold">
                         NWF.org
                     </mj-navbar-link>
                 </mj-navbar>
@@ -623,7 +623,7 @@
                 <mj-raw><!--[if !mso]><!--></mj-raw>
                 <mj-image
                         alt="NWF Logo"
-                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/nwf_cropped_white.png?v=1723561228000"
+                        src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/nwf_dark_mode_logo.png?v=1725553606000"
                         width="260px"
                         href="https://www.nwf.org"
                         css-class="dark-only"
@@ -715,7 +715,7 @@
                 <mj-raw><!--[if !mso]><!--></mj-raw>
                 <mj-image
                     alt="NWF Logo"
-                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/nwf_cropped_white.png?v=1723561228000"
+                    src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10033/nwf_dark_mode_logo.png?v=1725553606000"
                     width="260px"
                     href="https://www.nwf.org"
                     css-class="dark-only"
